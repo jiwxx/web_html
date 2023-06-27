@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keyword" content="">
+        <meta name="description" content="">
+        <title>회원가입</title>
+        <style>
+            table,th,td {border:1px solid black}
+        </style>
+    </head>
+    <body>
+        <table>
+            <h1>회원가입</h1>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>가입양식</legend>
+                    <div class="all_algree">
+                        <label><input type="checkbox" name="a_agree" value="agree" id="agree">모든약관에 동의합니다.</label>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">구분</th>
+                                <th scope="col">내용</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">아이디</th>
+                                <td>
+                                    <input type="text" autofocus maxlength="12" name="user_ID" placeholder="영문소문자/숫자 입력"> * 최대 12글자 제한
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">비밀번호</th>
+                                <td><input type="password" maxlength="12" name="user_pw" placeholder="아이디와 다르게 입력"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">주민등록번호</th>
+                                <td><input type="text" maxlength="6" name="regi_first" placeholder="주민번호 앞 6자리">-<input type="password" maxlength="7" placeholder="주민등록번호 뒤 7자리"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">성별</th>
+                                <td>
+                                    남
+                                    <input type="radio" value="" name="" id="">
+                                    여
+                                    <input type="radio" value="" name="" id="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">관심직종</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">휴대전화</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">이메일</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">인사말</th>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </form>
+        </table>
+    </body>
+</html>
