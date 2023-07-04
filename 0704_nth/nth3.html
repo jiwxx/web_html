@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .gnb > li:nth-child(2) > a:nth-child(1) {
+            background-color:lightblue;
+        }
+        .gnb li .snb{}
+        .gnb li .snb:nth-of-type(1) {
+            background-color:red;
+        }
+        .gnb li .snb:nth-of-type(2){
+            background-color:blue;
+        }
+         */
+        .gnb > li:nth-child(2) > a:nth-child(1) {
+            background-color:lightblue;
+        }
+        .gnb li .snb{}
+        .gnb > li:nth-child(2) .snb:nth-child(3) {
+            background-color:red;
+        }
+        .gnb li .snb:nth-of-type(2){
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+    <ul class="gnb">
+        <li><a href="#">gnb1</a></li>
+        <li><a href="#">gnb2-1</a>
+            <a href="#">gnb2-2</a>
+            <ul class="snb">
+                <li><a href="#">snb1</a></li>
+                <li><a href="#">snb2</a></li>
+            </ul>
+            <ul class="snb">
+                <li><a href="#">snb1</a></li>
+                <li><a href="#">snb2</a></li>
+            </ul>
+        </li>
+        <li><a href="#">gnb3</a>
+    </ul>
+</body>
+</html>
