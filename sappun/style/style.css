@@ -1,0 +1,236 @@
+/* snb 위치 */
+.snb {
+    background-color:white;
+    width:30px;
+    position:fixed;
+    right:0px; bottom:350px;
+}
+.snb a:first-child {
+    background-color:#ff7f50;
+}
+.snb a {
+    margin-top:-1px;
+    border:1px solid #aaa;
+    padding:5px;
+    display:block; 
+    text-align:center;
+}
+.snb a img {}
+/* header 위치 */
+header {
+    margin:0 auto;
+}
+header .event_bg {
+    background-color:#cccc
+}
+header .event_bg p {
+    text-align:center;
+    padding:10px 0;
+}
+header .event_bg p em {
+    font-size:0.8333rem;
+    font-weight:700;
+    letter-spacing:-0.02em;
+}
+/* lnb 위치 */
+header .logo_lnb {
+    /* background-color:pink; */
+    height:100px;
+    padding:40px 0;
+    
+}
+header .logo_lnb h1 {
+    /* background-color:red; */
+    width:130px; height:19px;
+    margin:0 auto;
+}
+header .logo_lnb h1 a {}
+header .logo_lnb h1 a img {width:100%;}
+header .logo_lnb .lnb {
+    display:inline-block;
+    float:right;
+    
+}
+header .logo_lnb .lnb .user {
+    float:left;
+}
+header .logo_lnb .lnb .user a {
+    margin:0 10px 0 10px;
+    font-size:0.833rem;
+    letter-spacing:-0.02em;
+
+}
+header .logo_lnb .lnb .user a img{}
+header .logo_lnb .lnb .user a span {
+    font-size:0.833rem;
+}
+header .logo_lnb .lnb .icon {
+    float:left;
+    
+}
+header .logo_lnb .lnb .icon a {
+    margin:0 10px 0 10px;
+}
+header .logo_lnb .lnb .icon:last-child {margin-right:10px;}
+
+/* nav 위치 */
+header .logo_lnb nav {
+/* background-color:salmon; */
+text-align:center;
+margin-top:40px;
+}
+header .logo_lnb nav ul {
+    display:inline-block;
+}
+header .logo_lnb nav ul li:first-child {}
+header .logo_lnb nav ul li {
+    padding:16px 0 16px 0;
+    float:left;
+    
+}
+header .logo_lnb nav ul li a {
+margin-left:15px;
+font-size:0.833rem;
+letter-spacing:-0.02em;
+}
+/* main 위치 */
+main {
+    margin:0 auto;
+}
+/* bnr 위치 */
+main .bnr {
+    
+}
+
+main .bnr .bnr_1 {
+    margin-top:40px;
+}
+main .bnr .bnr_1 a{
+}
+main .bnr .bnr_1 a img {width:100%;}
+
+main .bnr .bnr_2 {
+    text-align:center;
+    margin:80px 0px;
+    width:auto;
+}
+main .bnr .bnr_2 a {
+    margin-right:26px;
+    width:416px; height:350px;
+    display:inline-block;
+    
+}
+main .bnr .bnr_2 a img {
+    width:100%; height:100%;}
+/* 상품위치 */
+main .product {
+    letter-spacing:-0.02em;
+    font-size:0.833em;
+    width:1300px;
+    margin:0 auto;
+    overflow:hidden;
+}
+main .product .weekly_best {
+    
+}
+main .product .weekly_best h1 {
+    font-weight:700;
+    margin-bottom:100px;
+    text-align:center;
+}
+main .product .weekly_best .best {
+    float:left;
+    margin:0 0 46px 13px;
+    
+
+}
+main .product .weekly_best .best a  {
+    width:425px; height:303px;
+}
+main .product .weekly_best .best a img  {width:100%;}
+main .product .weekly_best .best .best_price {
+
+}
+main .product .weekly_best .best .best_price h2 {
+    padding:10px;
+}
+main .product .weekly_best .best .best_price p {
+    padding-left:10px;
+}
+main .product .weekly_best .best .best_price p em {
+    font-weight:700;
+}
+main .product .weekly_best .best .best_info {}
+main .product .weekly_best .best .best_info p:first-child {
+    margin-top:36px;
+    border-top:1px solid #ccc;
+}
+main .product .weekly_best .best .best_info p {
+    padding:10px;
+    margin-top:10px;
+}
+main .product .weekly_best .best .best_info p em:first-child {
+    float:left;
+}
+main .product .weekly_best .best .best_info p em:last-child {
+    float:right;
+    color:#ff7f50;
+}
+main .product .weekly_best .best .best_info p span:first-child {
+    border: 1px solid #ffe4c4; background-color:#ffe4c4;
+    padding:5px; color:white;
+}
+main .product .weekly_best .best .best_info p span:last-child{
+    border: 1px solid #000080; background-color:#000080;
+    padding:5px; color:white;
+    margin:10px;
+}
+main .product .weekly_best .best .best_info p span {
+    
+}
+main .btm_bg {
+    background:url('../image/made_img.jpg');
+    height:287px;
+}
+main .btm_bg .btm {
+    text-align:center;
+    padding-top:100px;
+}
+main .btm_bg .btm p {}
+main .btm_bg .btm h3 {
+    font-size:48px;
+    font-weight:700;
+    color:#fff;
+    padding-bottom:20px;
+    /* position:absolute; top:100px; right:548px; */
+}
+
+main .btm_bg .btm p a {
+    color:#fff;
+    font-weight:500;
+    border:1px solid #fff;
+    padding:10px 30px;
+    letter-spacing:-0.02em;
+    /* position:absolute; bottom:100px; right:646px; */
+}
+/* footer 위치 */
+footer {
+    padding:50px 70px;
+    border-top:1px solid #aaa;
+    margin-top:100px;
+    font-size:0.833rem;
+    letter-spacing:-0.02em;
+}
+footer .f_top {
+    
+}
+footer .f_top a span {color:#ccc;}
+footer .f_top a {
+    padding-right:30px;
+    font-weight:500;
+}
+footer .f_btm {
+    margin-top:20px;
+    line-height:20px;
+}
+
