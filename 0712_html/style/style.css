@@ -1,0 +1,114 @@
+/* rgb(95 3 128) */
+.top_bnr_bg .top_bnr, header {background-color:pink;
+    margin:0 auto; width:1050px;
+}
+/* header-sprite 공통그룹선택자 */
+header .middle .logo h1,
+header .middle #searchFrm fieldset .search_btn,
+header .lnb a,
+header .btm .all_nav .menue {
+    background:skyblue url('../image/kurly_img/icon_set.png');
+    display:inline-block;
+    width:36px; height:36px;
+    text-indent:-9999px;
+}
+/* 42 35 63 56 */
+/* 이벤트 배너 */
+.top_bnr_bg {background-color:rgb(95 3 128);}
+.top_bnr_bg .top_bnr {
+    height:42px;
+    display:flex; flex-flow: row nowrap;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+.top_bnr_bg .top_bnr a {color:white;}
+.top_bnr_bg .top_bnr .event {}
+.top_bnr_bg .top_bnr .close {
+    position:absolute; right:0;
+}
+
+/* 회원가입, 로그인, 고객센터 */
+header .user_lnb {background-color: aqua;
+    height:35px; display:flex;
+    flex-flow:row nowrap;
+    justify-content:flex-end;
+    align-items:center;
+}
+header .user_lnb a {}
+header .user_lnb .join {}
+header .user_lnb .login {}
+header .user_lnb .customer_service {}
+
+/* 로고, 검색, lnb */
+header .middle {background-color:palevioletred;
+    height:63px; display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+}
+header .middle .logo {
+    display:flex; flex-flow:row nowrap;
+    align-items:center;
+    background-color: beige;
+    
+}
+header .middle .logo h1 {
+    width: 82px; height: 42px;
+    background-position:0 -158px;
+}
+header .middle .logo .a {}
+header .middle .logo .market {}
+header .middle .logo .beauty {}
+
+header .middle #searchFrm {}
+header .middle #searchFrm fieldset {
+    border:1px solid rgb(95 3 128); border-radius:5px;
+    width:400px; height:48px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 10px;
+}
+header .middle #searchFrm fieldset #search_text {
+    font-weight:500;
+}
+header .middle #searchFrm fieldset .search_btn {
+    background-position:0 -122px;
+}
+
+header .lnb {}
+header .lnb a {}
+header .lnb .map {
+    background-position:0 -86px;
+}
+header .lnb .like {
+    background-position:0 -50px;
+}
+header .lnb .cart {
+    background-position:0 -14px;
+}
+
+header .btm {background-color: plum;
+    height:56px;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+}
+header .btm .all_nav {}
+header .btm .all_nav span {}
+header .btm .all_nav .menue {
+    width: 16px; height: 14px;
+    background-position:0 0;
+}
+
+header .btm .btm_left {}
+header .btm .btm_left a {}
+header .btm .btm_left .new {}
+header .btm .btm_left .best {}
+header .btm .btm_left .shopping {}
+header .btm .btm_left .benefits {}
+
+header .btm .delivery_info {}
+header .btm  .delivery_info em {}
+header .btm .delivery_info span {}
