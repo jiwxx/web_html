@@ -1,0 +1,241 @@
+/* 1. title */
+.top_bg {
+    background: url(../image/bg1.png) no-repeat fixed center 70%;
+    background-size: cover;
+    position: relative;
+}
+.top_bg::after {content:'';/* 가상선택자 필수 속성 */ 
+    background: linear-gradient(180deg, rgba(255,255,255,0.7) 0%, rgba(0,0,0,0.7) 100%);
+    display:block; height:800px; width:100%; position:absolute; left:0; top:0;
+    z-index:90;
+    /* absolute 적용 시 기본 block w100% inline 처럼 변한다. */
+}
+.top_bg .title {
+    letter-spacing:-0.02em;
+    background: rgba(255,255,0,0.5);
+    width:1200px; height:800px; margin:0 auto;
+    display:flex; flex-flow: column nowrap; align-items: center;
+    z-index:100; position:relative; /* .top_bg::after보다 위로 올라오게 */
+}
+.top_bg #snow {
+    position:absolute; left:0; top:0;
+    z-index:200; width:100%; height:800px;
+}
+.top_bg .title .logo {
+    align-self:flex-start;
+}
+.top_bg .title .logo img {}
+.top_bg .title h1 {
+    text-align: center;
+    line-height: 90px;
+    font-size:3.157rem; font-weight:500;
+    color:#fff;
+}
+.top_bg .title h1 em {
+    font-size:3.157rem; font-weight:600;}
+.top_bg .title .surport_btn {
+    color:#fff;
+    text-align: center;
+    border-radius: 50px;
+    padding:30px 100px;
+    background: linear-gradient(90deg, rgba(255,147,0,1) 0%, rgba(255,114,0,1) 100%);
+    margin-top:50px;
+    cursor: pointer;
+}
+.top_bg .title .surport_btn span {font-size:1.7rem; font-weight:500;}
+.top_bg .title .surport_btn img {width:20px; height:20px;}
+.top_bg .title .QnA {
+    align-self:flex-end;
+    background:#222; padding:15px 20px; border-radius: 50px;
+    cursor: pointer;
+}
+.top_bg .title .QnA img {}
+.top_bg .title .QnA p {}
+.top_bg .title .QnA p span {font-size:1.3rem; color:#fff; margin:0 10px;}
+.top_bg .title .QnA p img {width:20px; height:20px;}
+/* 2.quiz */
+.quiz_bg {
+    background: url(../image/quiz_bg.png) no-repeat center;
+    background-size:cover;
+}
+.quiz_bg .quiz > * {background: rgba(0,255,255,0.5);}
+.quiz_bg .quiz {
+    width:1200px; margin:0 auto;
+    display:flex; flex-flow: row nowrap; justify-content:space-between;
+    padding:100px 0;
+}
+.quiz_bg .quiz .left {
+    width:492px; 
+    color:#fff;
+    letter-spacing:-0.02em;
+}
+.quiz_bg .quiz .left h2 {
+    text-align: center; font-size: 3.1rem;
+    font-weight:700;
+}
+.quiz_bg .quiz .left h3 {
+    font-size:1.3rem; margin:35px 0;
+}
+.quiz_bg .quiz .left #quiz_frm {}
+.quiz_bg .quiz .left #quiz_frm fieldset {}
+.quiz_bg .quiz .left #quiz_frm fieldset ul {
+}
+.quiz_bg .quiz .left #quiz_frm fieldset ul li {
+    margin-bottom:25px;
+}
+.quiz_bg .quiz .left #quiz_frm fieldset ul li label input:checked+span {
+    background:purple url(../image/quiz_check.png) no-repeat;
+}
+.quiz_bg .quiz .left #quiz_frm fieldset ul li label {}
+.quiz_bg .quiz .left #quiz_frm fieldset ul li label input {
+    appearance:none; /* from input 요소 숨기기*/
+}
+.quiz_bg .quiz .left #quiz_frm fieldset ul li label span {
+    background:purple url(../image/quiz_un_check.png) no-repeat;
+    padding-left:34px; font-weight:500;
+    font-size:1.3rem; 
+} /* 상태선택자 (radio chec될 경우 span의 이미지 변경하기 */
+.quiz_bg .quiz .left #quiz_frm fieldset #quiz_answer {
+    background:#222;
+    color:#fff; font-size:1.3rem;
+    padding:20px 170px; border-radius:50px;
+    letter-spacing:-0.02em;
+}
+.quiz_bg .quiz .right {
+    letter-spacing:-0.02em;
+    width:550px;
+    text-align:center;
+}
+.quiz_bg .quiz .right h2 {
+    font-size:1.3rem; font-weight:500;
+    padding:20px 180px; background:#FF7200;
+    border-radius:20px 20px 0 0;
+}
+.quiz_bg .quiz .right h2 img {
+    width:30px; height:30px;
+}
+.quiz_bg .quiz .right .contents {
+    padding:60px 0;
+    background: #fff; border-radius: 0 0 20px 20px;
+}
+.quiz_bg .quiz .right .contents em {
+    font-size:3.1rem; font-weight:600;
+    color:#FF7200;;
+}
+.quiz_bg .quiz .right .contents span {font-size:2.3rem; font-weight:600;}
+.quiz_bg .quiz .right .update {
+    color:#fff; margin-top:30px;
+    font-size:0.8rem;
+}
+/* 3. youyube */
+.video_bg {
+    padding:100px 0;
+    background:url(../image/video_bg.png) no-repeat fixed center 90%;
+    background-size:cover;
+    display:flex; flex-flow:column nowrap;
+    align-items:center;
+}
+.video_bg h2 {
+    font-size:3.1rem;
+    font-weight:700;
+    text-align:center;
+    line-height:90px;
+    letter-spacing:-0.02em;
+}
+.video_bg iframe {
+    margin:50px 0;
+}
+.video_bg .surport_btn {
+    letter-spacing:-0.02em;
+    color:#fff;
+    text-align: center;
+    border-radius: 50px;
+    padding:30px 100px;
+    background: linear-gradient(90deg, rgba(255,147,0,1) 0%, rgba(255,114,0,1) 100%);
+    margin-top:50px;}
+.video_bg .surport_btn span {font-size:1.7rem; font-weight:500;}
+.video_bg .surport_btn img {width:20px; height:20px;}
+/* 4. 50% 감소 */
+.percent_bg {
+    padding:100px 0;
+    background: url(../image/50_bg.png) no-repeat center;
+    background-size:cover;
+}
+.percent_bg .percent {
+    color:#fff;
+    margin:0 auto; width:1200px;
+    display:flex; flex-flow:column nowrap;
+}
+.percent_bg .percent h2 {
+    line-height:90px; 
+    font-size:3.1rem; font-weight:700;
+}
+.percent_bg .percent h2 em {
+    font-size:3.1rem; color:#000;
+    background:#fff; font-weight:700;
+}
+.percent_bg .percent p {
+    font-size:1.7rem;
+    line-height:50px;
+    margin:10px 0;
+}
+.percent_bg .percent .polar {}
+.percent_bg .percent .polar img {width:1200px; height:600px;}
+/* 5. 28조~ 332만명 */
+.warming_bg {background:#f1f1f1;}
+.warming_bg .warming {
+    text-align:center;
+    width:1200px; margin:0 auto; padding:100px 0;
+}
+.warming_bg .warming h2 {
+    font-size:3.1rem; font-weight:700;
+}
+.warming_bg .warming .contents {
+    font-size:1.7rem;
+    padding:100px 0; line-height:60px;
+}
+.warming_bg .warming ul {
+    display:flex; flex-flow:row nowrap;
+    text-align:center;
+}
+.warming_bg .warming ul li:last-child {margin-right:0;}
+.warming_bg .warming ul li {
+    background:#fff;
+    width:calc(33.33% - 40 / 3);
+    margin-right:20px;
+}
+.warming_bg .warming ul li .top {
+    height:330px; width:390px;
+    background-position:center 70%;
+    background-size:cover;
+    color:#fff;
+}
+.warming_bg .warming ul li:nth-child(1) .top {
+    background-image:url(../image/28.png); /* 백그라운드 속성 중복되지않도록 구분짓자 */
+    
+}
+.warming_bg .warming ul li:nth-child(2) .top {
+    background-image:url(../image/27.png);
+}
+.warming_bg .warming ul li:nth-child(3) .top {
+    background-image:url(../image/28.png);
+}
+.warming_bg .warming ul li .top h3 {
+    font-size:3.1rem;
+    font-weight:700;
+    padding:30px 0;
+}
+.warming_bg .warming ul li .top p {
+    font-size:1.3rem; font-weight:500;
+}
+.warming_bg .warming ul li .list_contents {
+    font-size: 1rem;
+    line-height:40px;
+    letter-spacing:-0.02em;
+    padding:30px;
+}
+/* 6. 지구위기 */
+/* 7. WWF */
+/* 8. 후원선물 */
+/* 9. 후원하기 */
+/* 10. 결제안내사항 */
