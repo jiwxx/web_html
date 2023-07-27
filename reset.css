@@ -1,7 +1,7 @@
 * {box-sizing:border-box;}
 /*lacal or web(@import) 글꼴 작성위치<style>삭제!!!!!!!!*/
 /* reset.css */
-html, body
+html, body,
 h1,h2,h3,h4,h5,h6,p, blockquote,address,
 span,strong,em,q,sub,sup,del,s,a,img,
 div,header,nav,aside,main,footer,article,figure,figcaption,
