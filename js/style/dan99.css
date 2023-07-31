@@ -1,0 +1,43 @@
+body {
+    background:url(../image/dan_bg.jpg) center no-repeat;
+    background-size: cover;
+    margin:0 auto;
+    width:1200px;
+    text-align: center;
+}
+body > * {margin:50px 0;}
+h1 {}
+h1 img {width:800px; height:250px;}
+#dan2, #calc, #result, #test {
+    font-size: 30px; text-align: center;
+    width:100px; height:50px;
+    border:2px solid #000;
+    border-radius: 5px;
+}
+h2 {
+    font-size: 45px;
+    margin-bottom:100px;
+    animation: up 1s alternate linear infinite;
+}
+@keyframes up {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(10px);}
+} 
+ul {}
+ul li {
+    margin:35px 0;
+}
+ul li #dan2 {
+    width:100px; height:50px;
+}
+ul li #calc {}
+ul li #result {}
+ul li #test:hover { box-shadow: 0 0 10px rgb(115,155,252); }
+ul li #test {
+    font-size:25px;
+    width:100px; height:40px;
+    background: linear-gradient(34deg, rgba(151,232,65,1) 0%, rgba(255,255,255,1) 100%);
+}
+ul li span {
+    font-size:40px;
+}

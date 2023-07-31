@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>적정체중 테스트기</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/scale.css">
 </head>
 <body>
-    <h1>적정체중을 알아보세요!</h1>
-        <div class="h_w_a">
-            <input type="text" name="height" value="" id="height" placeholder="키를 입력하세요.">
-            <input type="text" name="weight" id="weight" value="" placeholder="몸무게를 입력하세요.">
-            <button type="button" id="btn">결과보기</button>
+    <h1>What's Your Proper Weight?</h1>
+        <div class="h_w_a ">
+            <p><span>height : </span><input type="text" name="height" value="" id="height" placeholder="키를 입력하세요."></p>
+            <p><span>weight : </span><input type="text" name="weight" id="weight" value="" placeholder="몸무게를 입력하세요."></p>
+            <button type="button" id="btn">result</button>
             <p class="answer"></p>
         </div>
     <script src="./script/scale.js"></script>
 </body>
+</html>
