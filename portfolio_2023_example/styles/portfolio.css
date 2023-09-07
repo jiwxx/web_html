@@ -1,0 +1,155 @@
+body, html {
+    scroll-behavior: smooth;
+}
+
+/* header */
+header, main {
+    background-color: #0B2832;
+    /* 반응형 대비 최소제한 너비 설정 */
+    min-width:900px; /* 최소너비 */
+}
+header {
+    /* background-color: purple; */
+    position:fixed; left:0; top:0; z-index: 999;
+    padding: 40px 30px 0 30px;
+    width:100%;
+    
+}
+header nav {
+    color:#fff;
+    border-top:1px solid #fff ;
+    border-bottom:3px solid #fff ;
+    padding:17px;
+    display: flex; justify-content: space-between;
+}
+header nav .gnb a:hover { color:#C0D9BF; }
+header nav .gnb {/* background-color: pink; */}
+header nav .gnb a {margin-right:35px ; font-weight: 400; color:#fff;}
+header nav .gnb a:last-child {margin-right: 0;}
+header nav .sns {}
+header nav .sns span {}
+/* home */
+main > * {padding:0 30px;}
+main {
+    /* background-color: black; */
+    padding-top:190px;
+
+}
+main #home {}
+main #home h1 {}
+main #home h1 img {}
+main #home .mouse {
+    text-align: center; padding: 190px 0 100px 0;
+    animation: mouse_m 2s linear alternate infinite;
+}
+main #home .mouse img {}
+@keyframes mouse_m {
+    0% {transform:translateY(0)}
+    100% {transform:translateY(-30px)}
+}
+main #skill {
+    background-color: #f1f1f1;
+    padding:70px 30px 100px 30px;
+}
+main #skill h1 {font-size: 2.5rem; font-weight: 600; color:#0B2832; margin-bottom: 15px;}
+main #skill .container {
+    /* 스킬 9개 수직 줄바꿈으로 배치하는 flex */
+    display: flex; flex-flow: column wrap;
+    height:700px;
+}
+main #skill .container li {
+    /* background-color: lightseagreen; */
+    width:45%;
+    padding:30px 0;
+    display: flex; flex-flow: row nowrap;
+    align-items:center;
+    border-bottom:1px dashed #0B2832;
+}
+main #skill .container li .icon {width:90px;}
+main #skill .container li .icon img {}
+main #skill .container li .contents {
+    width:clac(100% - 90px);
+    line-height: 30px;
+}
+/* profile */
+main #profile {
+    background-color: #f1f1f1;
+
+
+}
+main #profile h1 {text-align: center;}
+main #profile h1 img {}
+main #profile .container {
+    /* background-color: pink; */
+    padding-top: 60px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: center;
+    width:963px; height: 686px;
+    margin: 0 auto;
+}
+main #profile .container p {
+    margin-right: 50px;
+}
+main #profile .container p img {}
+main #profile .container .info {
+    width:50%;
+}
+main #profile .container .info h2 {
+    font-size: 1.5rem; font-weight: 600;
+    margin-bottom: 30px;
+}
+main #profile .container .info .contents > * {margin-bottom: 20px;}
+main #profile .container .info .contents {
+    /* background-color: antiquewhite; */
+    display: flex; flex-flow: row wrap;
+    width:600px;
+    
+}
+main #profile .container .info .contents dt {width:112px;}
+main #profile .container .info .contents dd {
+    font-size: 1.25rem;
+    width:calc(100% - 112px);} /* dd 여백맞추기 */
+main #profile .container .info .hobby > * {margin-bottom: 20px;}
+main #profile .container .info .hobby {
+    margin: 50px 0 100px 0;
+    /* background-color: antiquewhite; */
+    width:300px;
+}
+main #profile .container .info .hobby dt {
+    font-size: 1.5rem; font-weight: 600;
+    margin-bottom: 30px;
+}
+main #profile .container .info .hobby dd {font-size: 1.25rem;}
+/* project web1 */
+main #project_web1 {
+    padding-top:100px;
+    background-color: #f1f1f1;
+}
+main #project_web1 h1 {text-align: center; font-size: 2.5rem; font-weight: 600; color:#0B2832;}
+main #project_web1 .con {
+    padding-top: 20px;
+    width: 925px;
+    margin: 0 auto;
+}
+main #project_web1 .con .link {/* text-align: center; */
+    margin-top: 40px;
+}
+main #project_web1 .con .link a:hover {background-color: #C0D9BF; color:#0B2832;}
+main #project_web1 .con .link a {
+    color:#fff;
+    font-size: 1.5rem; padding:10px 20px;
+    background-color: #0B2832;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+main #project_web1 .con .link a:last-child {margin-right: 0;}
+main #project_web1 .con .project_info {
+    margin-top: 40px;
+}
+main #project_web1 .con .project_info p {
+    line-height: 40px; font-size: 1.25rem;
+}
+main #project_web1 .preview {
+    text-align: center;
+}
+main #project_web1 .preview img {}

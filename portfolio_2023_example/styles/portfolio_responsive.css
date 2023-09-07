@@ -1,0 +1,4 @@
+@media screen and (max-width:1400px){ /* 최대 1400px 크기 */
+    main #skill .container {height:1000px;}
+    main #skill .container li {width:40%;}
+}
